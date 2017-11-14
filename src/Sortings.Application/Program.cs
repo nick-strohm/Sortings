@@ -41,14 +41,14 @@ namespace Sortings.Application
             Console.Write($"{headerr}{new string(' ', len)}{Environment.NewLine}");
 
             MeasureSortingTime<BubbleSort>(baseArr, tests, elements, maxValue);
-            //MeasureSortingTime<QuickSort>(baseArr, tests, elements, maxValue);
-            //MeasureSortingTime<SelectionSort>(baseArr, tests, elements, maxValue);
-            //MeasureSortingTime<CountingSort>(baseArr, tests, elements, maxValue);
-            //MeasureSortingTime<InsertionSort>(baseArr, tests, elements, maxValue);
-            //MeasureSortingTime<MergeSort>(baseArr, tests, elements, maxValue);
-            //MeasureSortingTime<CSharpSort>(baseArr, tests, elements, maxValue);
-            //MeasureSortingTime<RadixSort>(baseArr, tests, elements, maxValue);
-            //MeasureSortingTime<HeapSort>(baseArr, tests, elements, maxValue);
+            MeasureSortingTime<QuickSort>(baseArr, tests, elements, maxValue);
+            MeasureSortingTime<SelectionSort>(baseArr, tests, elements, maxValue);
+            MeasureSortingTime<CountingSort>(baseArr, tests, elements, maxValue);
+            MeasureSortingTime<InsertionSort>(baseArr, tests, elements, maxValue);
+            MeasureSortingTime<MergeSort>(baseArr, tests, elements, maxValue);
+            MeasureSortingTime<CSharpSort>(baseArr, tests, elements, maxValue);
+            MeasureSortingTime<RadixSort>(baseArr, tests, elements, maxValue);
+            MeasureSortingTime<HeapSort>(baseArr, tests, elements, maxValue);
 
             Console.ReadLine();
         }
