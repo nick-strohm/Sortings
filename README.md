@@ -4,6 +4,7 @@ This repository is part of the tasks of our computer science teaching. It expand
 
 ## Comparison
 Tested with 10000 random generated items with a max value of 10000.
+
 Place | Sort algorithm | Median time in milliseconds (100 tests)
 ------|----------------|----------------------------------------
 1 | RadixSort | 0,0653
