@@ -40,16 +40,6 @@ namespace Sortings.Core.Algorithms
                     comparison++;
                 }
             }
-
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine($"Comparisons: {comparison} | Swaps: {swaps}");
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
         }
     }
 }

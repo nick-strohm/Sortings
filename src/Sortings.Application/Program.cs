@@ -50,8 +50,6 @@ namespace Sortings.Application
             //MeasureSortingTime<RadixSort>(baseArr, tests, elements, maxValue);
             //MeasureSortingTime<HeapSort>(baseArr, tests, elements, maxValue);
 
-            Console.WriteLine($"Worst-case: {((Math.Pow(elements, 2) - elements) / 2)}");
-
             Console.ReadLine();
         }
 
