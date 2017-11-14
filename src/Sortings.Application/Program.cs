@@ -18,12 +18,7 @@ namespace Sortings.Application
 
             Console.WriteLine($"Generating random values to sort ({elements} elements with a max value of {maxValue}).");
 
-            //var baseArr = GetRandomValues(elements, maxValue);
-            var baseArr = new int[elements];
-            for (var i = 0; i < elements; i++)
-            {
-                baseArr[i] = i;
-            }
+            var baseArr = GetRandomValues(elements, maxValue);
 
             Console.WriteLine($"Starting to sort. Running {tests} tests per sorting algorithm.");
 
