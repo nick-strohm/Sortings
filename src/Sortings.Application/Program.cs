@@ -9,8 +9,8 @@ namespace Sortings.Application
     {
         private static void Main()
         {
-            var tests = 1;
-            var elements = 100;
+            var tests = 100;
+            var elements = 10000;
             var maxValue = elements;
 
             Console.ForegroundColor = ConsoleColor.White;
