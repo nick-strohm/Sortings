@@ -19,8 +19,9 @@ namespace Sortings.Core.Algorithms
         private void Sort(int[] x, bool ascending)
         {
             var n = x.Length - 1;
-            var comparison = 0;
-            var swaps = 0;
+
+            var swapped = false;
+
             for (var i = 0; i < n; i++)
             {
                 for (var j = 0; j < n - i; j++)
@@ -28,15 +29,18 @@ namespace Sortings.Core.Algorithms
                     if (x[j] > x[j + 1] && ascending)
                     {
                         Swap(x, j, j + 1);
-                        swaps++;
+                        swapped = true;
                     }
                     else if (x[j] < x[j + 1] && !ascending)
                     {
                         Swap(x, j, j + 1);
-                        swaps++;
+                        swapped = true;
                     }
+                }
 
-                    comparison++;
+                if (!swapped)
+                {
+                    break;
                 }
             }
         }

@@ -11,8 +11,6 @@ namespace Sortings.Core.Algorithms
             var n = x.Length;
             var max = x.Max();
 
-            var output = new int[n];
-
             var count = new int[max + 1];
             for (var i = 0; i < x.Length; i++)
             {
@@ -25,12 +23,10 @@ namespace Sortings.Core.Algorithms
             {
                 for (var j = 0; j < count[i]; j++)
                 {
-                    output[currIndex] = i;
+                    x[currIndex] = i;
                     currIndex++;
                 }
             }
-
-            Array.Copy(output, x, output.Length);
         }
     }
 }
